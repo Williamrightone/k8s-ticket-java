@@ -1,4 +1,4 @@
-package ticket.bff.service.controller.dto.res;
+package ticket.member.service.controller.dto.res;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 

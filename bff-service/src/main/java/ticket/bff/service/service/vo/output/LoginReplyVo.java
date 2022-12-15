@@ -1,4 +1,4 @@
-package ticket.bff.service.controller.dto.res;
+package ticket.bff.service.service.vo.output;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class LoginResponse {
+public class LoginReplyVo {
 
 	private String email;
 	
