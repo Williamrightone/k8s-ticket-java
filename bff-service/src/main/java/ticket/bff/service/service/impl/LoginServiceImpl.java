@@ -35,9 +35,9 @@ public class LoginServiceImpl implements LoginService {
 				.postForEntity(restUrlConfig.getMemberServiceLoginUrl(), loginAskVo, LoginResponse.class);
 		
 		if(!loginResponse.getStatusCode().equals(HttpStatus.OK)) {
-			//TODO throw new Exception
-			System.out.println("那頭出錯");
 			System.out.println(loginResponse.getStatusCodeValue());
+			System.out.println("Error Msg");
+			//TODO throw new Exception
 		}
 		
 		System.out.println("==============================");

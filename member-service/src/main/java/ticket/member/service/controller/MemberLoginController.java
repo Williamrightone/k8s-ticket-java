@@ -22,18 +22,21 @@ import tw.william.ticket.common.rest.RestfulResponse;
 public class MemberLoginController {
 
 	@PostMapping("/login")
-	public ResponseEntity<LoginResponse> vaildPassword(@Valid @RequestBody LoginRequest request){
-		
+	public ResponseEntity<LoginResponse> vaildPassword(@Valid @RequestBody LoginRequest request) {
+
 //		return loginService.loginByEmail(request);
-		
+
 		System.out.println("OKOK");
-		
-		if(true) {
-			throw new GlobalServiceException(GlobalServiceErrorType.INPUT_FORMAT_ERROR,"12345");
-		}
-		
-		return new ResponseEntity<LoginResponse>(new LoginResponse("wwwww","wwwww","wwwww","wwwww"), HttpStatus.OK);
-		
+
+//		if(true) {
+//			throw new GlobalServiceException(GlobalServiceErrorType.INPUT_FORMAT_ERROR,"12345");
+//		}
+
+		return new ResponseEntity<LoginResponse>(new LoginResponse("willy4543@gmail.com", "William Wu",
+				"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7XCJ0eXBlXCI6XCJSSVRcIixcInVzZXJJZFwiOlwiV2lsbGlhbVwiLFwiaXNzXCI6XCJOb3YgNCwgMjAyMiwgMToyNzo1MiBBTVwiLFwicmVmXCI6XCI2Y2RiOWI2NC0xZjA3LTQyOTYtOTM5Zi0wNjdhMjFiMGQ4ZTdcIn0ifQ.l-oh61pl1Ms5d5ays-ngPO3kiKJmHRV_t7wsXorM4WY",
+				"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7XCJ0eXBlXCI6XCJSSVRcIixcInVzZXJJZFwiOlwiV2lsbGlhbVwiLFwiaXNzXCI6XCJOb3YgNCwgMjAyMiwgMToyNzo1MiBBTVwiLFwicmVmXCI6XCI2Y2RiOWI2NC0xZjA3LTQyOTYtOTM5Zi0wNjdhMjFiMGQ4ZTdcIn0ifQ.l-oh61pl1Ms5d5ays-ngPO3kiKJmHRV_t7wsXorM4WY"),
+				HttpStatus.OK);
+
 	}
-	
+
 }
